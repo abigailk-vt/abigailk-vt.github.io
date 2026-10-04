@@ -1,0 +1,72 @@
+<!-- This page is the home page (user is not logged in) -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="This is the home page of Kit Central">
+  <title>Home | Kit Central</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="js/jquery-3.7.1.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body class="home-page">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="site-shell">
+<!-- Header -->
+    <header class="site-header">
+      <div class="header-center">
+      <a class="brand" href="home.html" aria-label="Kit Central, home">
+        <span class="brand-mark" aria-hidden="true">⚽</span>
+        <span class="brand-name">Kit Central</span>
+      </a>
+      <form class="search-form header-search" role="search" action="search.html" method="get">
+        <label for="header-search">Search jerseys</label>
+        <input id="header-search" name="q" type="text" placeholder="Try Luka Modric">
+        <button class="button" type="submit">Search</button>
+      </form>
+      </div>
+<!-- Navigation -->
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="home.html" aria-current="page">Home</a>
+        <a href="list.html">Browse</a>
+        <a href="about.html">About Us</a>
+      </nav>
+    </header>
+    <main id="main" class="home-main">
+<!-- Welcome Title -->
+<section class="hero" aria-labelledby="welcome-title">
+  <div class="hero-copy"><h1 id="welcome-title">Welcome to Kit Central</h1>
+    <div class="button-row"><a class="button" href="list.html">Login</a>
+      <button class="button secondary" type="button">Sign Up</button>
+    </div>
+  </div>
+</section>
+<!-- Displays Featured Players/Jerseys -->
+<section class="home-featured" aria-labelledby="featured-jerseys">
+  <div class="feature-grid" id="featured-jerseys">
+    <a class="home-image-card" aria-label="AC Milan Jersey">
+<!-- Image Source: https://medium.com/@RationalBadger/paolo-maldini-the-art-of-defence-93846a7c4d1b -->
+      <img src="images/maldini-home.webp" alt="Paolo Maldini wearing AC Milan Jersey" loading="lazy">
+    </a>
+<!-- Image Source: https://www.squawka.com/en/features/sergio-ramos-spain-cap-record-forever-man/ -->
+    <a class="home-image-card" aria-label="Spain National Team Jersey">
+      <img src="images/ramos-home.jpg" alt="Sergio Ramos wearing Spain National Team Jersey" loading="lazy">
+    </a>
+<!-- Image Source: https://www.lfc.se/content/870/fernando-torres -->
+    <a class="home-image-card" aria-label="Liverpool Jersey">
+      <img src="images/torres-home.webp" alt="Fernando Torres wearing Liverpool Jersey" loading="lazy">
+    </a>
+  </div>
+</section></main>
+<!-- Footer -->
+    <footer class="site-footer">
+      <nav aria-label="Footer navigation">
+        <a href="about.html">About us</a>
+        <a href="faq.html">FAQ</a>
+        <a href="list.html">Site navigation</a>
+      </nav>
+    </footer>
+  </div>
+</body>
+</html>

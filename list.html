@@ -1,0 +1,140 @@
+<!-- This is the HTML for the "List" design/page -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="This is the list.html for browsing jerseys">
+  <title>List | Kit Central</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="js/jquery-3.7.1.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="header-center">
+      <a class="brand" href="home.html" aria-label="Kit Central, home">
+        <span class="brand-mark" aria-hidden="true">⚽</span>
+        <span class="brand-name">Kit Central</span
+          ></a>
+      <form class="search-form header-search" role="search" action="search.html" method="get">
+        <label for="header-search">Search jerseys</label>
+        <input id="header-search" name="q" type="text" placeholder="Try Luka Modric">
+        <button class="button" type="submit">Search</button>
+      </form>
+      </div>
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="home-alternate.html">Home</a>
+        <a href="profile.html">My Profile</a>
+        <a href="list.html" aria-current="page">Browse</a>
+        <a href="about.html">About Us</a>
+        <a href="home.html">Log Out</a>
+      </nav>
+    </header>
+    <main id="main">
+<header class="page-intro">
+  <h1>Browse</h1></header>
+  <!-- Search Text Field -->
+<div class="browse-tools">
+  <a class="button secondary" href="add.html">Add a jersey</a>
+</div>
+  <!-- Filter by Tag Section -->
+<div class="filter-panel">
+  <fieldset>
+    <legend>Filter by tag</legend>
+    <label><input type="checkbox" name="tag" value="Cosmos"> Cosmos</label>
+    <label><input type="checkbox" name="tag" value="Argentina"> Argentina</label>
+    <label><input type="checkbox" name="tag" value="Manchester United"> Manchester United</label>
+    <label><input type="checkbox" name="tag" value="Barcelona"> Barcelona</label>
+    <label><input type="checkbox" name="tag" value="Real Madrid"> Real Madrid</label>
+    <label><input type="checkbox" name="tag" value="Tottenham"> Tottenham</label>
+  </fieldset>
+</div>
+<div class="active-filter-row">
+  <ul class="tag-list" aria-label="Selected tags">
+    <li><button class="tag tag-remove" type="button" aria-label="Remove Argentina tag">Argentina x</button></li>
+    <li><button class="tag tag-remove" type="button" aria-label="Remove Real Madrid tag">Real Madrid x</button></li>
+  </ul><button class="button secondary" type="button">Clear Filters</button>
+</div>
+<!-- Jersey List Section: it will show a grid of the jerseys currently in the database by the tags selected. If no tags selected, shows everything -->
+<section class="product-grid" aria-label="Jersey collection">
+  <article class="product-card">
+    <a href="detail.html">
+<!-- Image Source: https://www.sothebys.com/en/buy/auction/2023/victoriam-part-ii/pele-1975-new-york-cosmos-triumphant-debut-match -->
+<img src="images/Screenshot 2026-09-27 152900.png" alt="The image shows 1975 New York Cosmos Pele Jersey" loading="lazy">
+      <div class="card-body">
+        <span class="card-meta">1975</span>
+        <span class="card-title">New York Cosmos Match Worn Jersey Pele</span>
+      </div>
+    </a>
+  </article>
+  <article class="product-card"><a href="detail.html">
+<!-- Image Source: https://www.soccerbible.com/performance/football-apparel/2026/09/adidas-celebrate-lionel-messi-s-legendary-argentina-career-with-special-edition-farewell-jersey/ -->
+<img src="images/messi-1.jpg" alt="The image shows 2026-2027 Argentina National Team - Messi Jersey" loading="lazy">
+      <div class="card-body">
+        <span class="card-meta">2026-2027</span>
+        <span class="card-title">Argentina National Team - Messi</span>
+      </div>
+    </a>
+  </article>
+  <article class="product-card"><a href="detail.html">
+<!-- Image Source: https://www.ebay.com/itm/127973447419?chn=ps&google_free_listing_action=view_item -->
+<img src="images/s-l1600.jpg" alt="The image shows 2008 Manchester United - Ronaldo Jersey" loading="lazy">
+      <div class="card-body">
+        <span class="card-meta">2008</span>
+        <span class="card-title">Manchester United - Ronaldo</span>
+      </div>
+    </a>
+  </article>
+  <article class="product-card"><a href="detail.html">
+<!-- Image Source: https://www.classicfootballshirts.com/2022-23-barcelona-home-shirt-lewandowski-9-910-m-barh22618916.html -->
+<img src="images/190925671161-1_d96nvyx1fphbgepv.webp" alt="The image shows 2022-2023 Barcelona Home Shirt - Lewandowski Jersey" loading="lazy">
+      <div class="card-body">
+        <span class="card-meta">2022-2023</span>
+        <span class="card-title">Barcelona Home Shirt - Lewandowski</span>
+      </div>
+    </a>
+  </article>
+  <article class="product-card"><a href="detail.html">
+<!-- Image Source: https://www.classicfootballshirts.com/2026-27-real-madrid-authentic-away-ls-shirt-bellingham-5-kc3980-5bellingham.html?src=player_page -->
+<img src="images/865864kc3980l-1_niqmkmellfpewt6s.webp" alt="The image shows 2026-2027 Real Madrid Authentic Away L/S Shirt Bellingham Jersey" loading="lazy">
+      <div class="card-body">
+        <span class="card-meta">2026-2027</span>
+        <span class="card-title">Real Madrid Authentic Away L/S Shirt Bellingham</span>
+      </div>
+    </a>
+  </article>
+  <article class="product-card"><a href="detail.html">
+<!-- Image Source: https://www.etsy.com/listing/1887060309/luka-modri-signed-tottenham-20092010 -->
+<img src="images/il_1588xN.7621512097_23gj.webp" alt="The image shows 2009-2010 Tottenham Signed Home Shirt Luka Modrić Jersey" loading="lazy">
+      <div class="card-body">
+        <span class="card-meta">2009-2010 </span>
+        <span class="card-title">Tottenham Signed Home Shirt Luka Modrić</span>
+      </div>
+    </a>
+  </article>
+  <article class="product-card">
+    <a href="detail.html">
+      <img src="images/puma-luka-modric-mens-ac-milan-home-jersey-w-champions-league-patches-2526-redblack-soccerwearhouse-2754337_5000x.webp" alt="2025-2026 AC Milan home jersey with Luka Modric on the back" loading="lazy">
+      <div class="card-body">
+        <span class="card-meta">2025-2026</span>
+        <span class="card-title">AC Milan 25/26 Home Jersey - Luka Modric</span>
+      </div>
+    </a>
+  </article>
+</section>
+</main>
+<!-- Footer -->
+    <footer class="site-footer">
+      <nav aria-label="Footer navigation">
+        <a href="about.html">About us</a>
+        <a href="faq.html">FAQ</a>
+        <a href="list.html">Site navigation</a>
+      </nav>
+    </footer>
+  </div>
+</body>
+</html>
