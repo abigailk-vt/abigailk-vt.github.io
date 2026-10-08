@@ -1,0 +1,22 @@
+name: Deploy on Github pages
+
+on:
+  push:
+    branches:
+      - main # Triggers when you push to the main branch
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Deploy Project folder to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./Project 3 # Change this to your subfolder path
