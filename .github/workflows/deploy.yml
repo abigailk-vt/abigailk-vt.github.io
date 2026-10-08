@@ -33,7 +33,7 @@ jobs:
       - name: Upload my website
         uses: actions/upload-pages-artifact@v4
         with:
-          path: "./Project 3"
+          path: "./cs5774/project3"
 
       - name: Publish
         id: deployment
