@@ -66,14 +66,14 @@ $(function () {
   $('.favorite-toggle').on('change', function () {
     const checkbox = $(this);
     const controls = checkbox.closest('.favorite-controls');
-    const shirt = controls.closest('article');
+    const jersey = controls.closest('article');
     const favorited = checkbox.prop('checked');
     //this control the state of the checkbox, if clicked, it will change to favorited and then vice versa
     controls.find('.favorite-state').text(favorited ? 'Favorited' : 'Not favorited');
-    shirt.toggleClass('is-favorite', favorited);
+    jersey.toggleClass('is-favorite', favorited);
     controls.find('.favorite-notice').remove();
     $('<p>').addClass('favorite-notice').attr('role', 'status')
-      .text(favorited ? 'This shirt was added to your favorites for this visit.' : 'This shirt was removed from your favorites.')
+      .text(favorited ? 'This jersey was added to your favorites for this visit.' : 'This jersey was removed from your favorites.')
       .appendTo(controls);
   });
 });
