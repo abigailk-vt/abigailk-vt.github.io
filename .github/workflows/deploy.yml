@@ -1,22 +1,40 @@
-name: Deploy on Github pages
+name: Deploy Kit Central on Github Pages
 
 on:
   push:
     branches:
-      - main # Triggers when you push to the main branch
+      - main
+  workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
 
-      - name: Deploy Project folder to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Download repository
+        uses: actions/checkout@v6
+
+      - name: Set up GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload my website
+        uses: actions/upload-pages-artifact@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./Project 3 # Change this to your subfolder path
+          path: "./Project 3"
+
+      - name: Publish
+        id: deployment
+        uses: actions/deploy-pages@v4
