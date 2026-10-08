@@ -1,5 +1,5 @@
+<!DOCTYPE html>
 <!-- This page is the home page (user is not logged in) -->
-<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -16,11 +16,11 @@
 <!-- Header -->
     <header class="site-header">
       <div class="header-center">
-      <a class="brand" href="index.html" aria-label="Kit Central, home">
+      <a class="brand" href="home.html" aria-label="Kit Central, home">
         <span class="brand-mark" aria-hidden="true">⚽</span>
         <span class="brand-name">Kit Central</span>
       </a>
-      <form class="search-form header-search" role="search" action="search.html" method="get">
+      <form class="search-form header-search" role="search" action="list.html" method="get">
         <label for="header-search">Search jerseys</label>
         <input id="header-search" name="q" type="text" placeholder="Try Luka Modric">
         <button class="button" type="submit">Search</button>
@@ -28,7 +28,7 @@
       </div>
 <!-- Navigation -->
       <nav class="primary-nav" aria-label="Primary navigation">
-        <a href="index.html" aria-current="page">Home</a>
+        <a href="home.html" aria-current="page">Home</a>
         <a href="list.html">Browse</a>
         <a href="about.html">About Us</a>
       </nav>
@@ -43,18 +43,18 @@
   </div>
 </section>
 <!-- Displays Featured Players/Jerseys -->
-<section class="home-featured" aria-labelledby="featured-jerseys">
+<section class="home-featured" aria-label="Featured jerseys">
   <div class="feature-grid" id="featured-jerseys">
-    <a class="home-image-card" aria-label="AC Milan Jersey">
+    <a class="home-image-card" href="list.html" aria-label="AC Milan Jersey">
 <!-- Image Source: https://medium.com/@RationalBadger/paolo-maldini-the-art-of-defence-93846a7c4d1b -->
       <img src="images/maldini-home.webp" alt="Paolo Maldini wearing AC Milan Jersey" loading="lazy">
     </a>
 <!-- Image Source: https://www.squawka.com/en/features/sergio-ramos-spain-cap-record-forever-man/ -->
-    <a class="home-image-card" aria-label="Spain National Team Jersey">
+    <a class="home-image-card" href="list.html" aria-label="Spain National Team Jersey">
       <img src="images/ramos-home.jpg" alt="Sergio Ramos wearing Spain National Team Jersey" loading="lazy">
     </a>
 <!-- Image Source: https://www.lfc.se/content/870/fernando-torres -->
-    <a class="home-image-card" aria-label="Liverpool Jersey">
+    <a class="home-image-card" href="list.html" aria-label="Liverpool Jersey">
       <img src="images/torres-home.webp" alt="Fernando Torres wearing Liverpool Jersey" loading="lazy">
     </a>
   </div>

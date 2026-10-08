@@ -1,5 +1,5 @@
+<!DOCTYPE html>
 <!-- This is the HTML for the "Details" design/page -->
-<!doctype html>
 <html lang="en">
 <!-- Header -->
 <head>
@@ -17,22 +17,22 @@
   <div class="site-shell">
     <header class="site-header">
       <div class="header-center">
-      <a class="brand" href="index.html" aria-label="Kit Central, home">
+      <a class="brand" href="home.html" aria-label="Kit Central, home">
         <span class="brand-mark" aria-hidden="true">⚽</span>
         <span class="brand-name">Kit Central</span>
       </a>
-      <form class="search-form header-search" role="search" action="search.html" method="get">
+      <form class="search-form header-search" role="search" action="list.html" method="get">
         <label for="header-search">Search jerseys</label>
         <input id="header-search" name="q" type="text" placeholder="Try Luka Modric">
         <button class="button" type="submit">Search</button>
       </form>
       </div>
       <nav class="primary-nav" aria-label="Primary navigation">
-        <a href="index-alternate.html">Home</a>
+        <a href="home-alternate.html">Home</a>
         <a href="profile.html">My Profile</a>
         <a href="list.html">Browse</a>
         <a href="about.html">About Us</a>
-        <a href="index.html">Log Out</a>
+        <a href="home.html">Log Out</a>
       </nav>
     </header>
     <main id="main">
@@ -57,7 +57,7 @@
     <h2>Description</h2>
     <p>This jersey marks the first year Luka Modric joined AC Milan. After 12 years dominating with Real Madrid, the maestro midfielder moved to Milan on a free transfer, adding another chapter to his legacy as one of the best in the world.</p>
     <div class="favorite-controls"><label><input class="favorite-toggle" type="checkbox"> Favorite this shirt</label><span class="favorite-state">Not favorited</span></div>
-    <div class="owner-controls" aria-label="Owner actions">
+    <div class="owner-controls" role="group" aria-label="Owner actions">
       <button class="button secondary" type="button">
         <span aria-hidden="true">✎</span> Edit</button>
         <button class="button secondary" type="button">Delete</button>

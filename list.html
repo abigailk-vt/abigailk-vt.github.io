@@ -1,5 +1,5 @@
+<!DOCTYPE html>
 <!-- This is the HTML for the "List" design/page -->
-<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -20,7 +20,7 @@
         <span class="brand-mark" aria-hidden="true">⚽</span>
         <span class="brand-name">Kit Central</span
           ></a>
-      <form class="search-form header-search" role="search" action="search.html" method="get">
+      <form class="search-form header-search" role="search" action="list.html" method="get">
         <label for="header-search">Search jerseys</label>
         <input id="header-search" name="q" type="text" placeholder="Try Luka Modric">
         <button class="button" type="submit">Search</button>
@@ -36,7 +36,7 @@
     </header>
     <main id="main">
 <header class="page-intro">
-  <h1>Browse</h1></header>
+  <h1 id="browse-heading">Browse</h1></header>
   <!-- Search Text Field -->
 <div class="browse-tools">
   <a class="button secondary" href="add.html">Add a jersey</a>
@@ -60,11 +60,12 @@
   </ul><button class="button secondary" type="button">Clear Filters</button>
 </div>
 <!-- Jersey List Section: it will show a grid of the jerseys currently in the database by the tags selected. If no tags selected, shows everything -->
-<section class="product-grid" aria-label="Jersey collection">
+<p id="search-summary" role="status"></p>
+<section id="search-results" class="product-grid" aria-label="Jersey collection">
   <article class="product-card">
     <a href="detail.html">
 <!-- Image Source: https://www.sothebys.com/en/buy/auction/2023/victoriam-part-ii/pele-1975-new-york-cosmos-triumphant-debut-match -->
-<img src="images/Screenshot 2026-09-27 152900.png" alt="The image shows 1975 New York Cosmos Pele Jersey" loading="lazy">
+<img src="images/screenshot-2026-09-27-152900.png" alt="The image shows 1975 New York Cosmos Pele Jersey" loading="lazy">
       <div class="card-body">
         <span class="card-meta">1975</span>
         <span class="card-title">New York Cosmos Match Worn Jersey Pele</span>
@@ -126,6 +127,7 @@
     </a>
   </article>
 </section>
+<div class="button-row"><a class="button secondary" href="list.html">Show all jerseys</a></div>
 </main>
 <!-- Footer -->
     <footer class="site-footer">
