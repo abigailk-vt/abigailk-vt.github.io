@@ -20,17 +20,16 @@
         <span class="brand-mark" aria-hidden="true">⚽</span>
         <span class="brand-name">Kit Central</span
           ></a>
+      <!-- this section is for the jquery search bar, using .search-form it will get the keyphrase and display the results-->
       <form class="search-form header-search" role="search" action="list.html" method="get">
-        <label for="header-search">Search jerseys</label>
+        <label for="header-search">Search Jerseys</label>
         <input id="header-search" name="q" type="text" placeholder="Try Luka Modric">
         <button class="button" type="submit">Search</button>
       </form>
       </div>
       <nav class="primary-nav" aria-label="Primary navigation">
         <a href="index-alternate.html">Home</a>
-        <a href="profile.html">My Profile</a>
         <a href="list.html" aria-current="page">Browse</a>
-        <a href="about.html">About Us</a>
         <a href="index.html">Log Out</a>
       </nav>
     </header>
@@ -39,7 +38,7 @@
   <h1 id="browse-heading">Browse</h1></header>
   <!-- Search Text Field -->
 <div class="browse-tools">
-  <a class="button secondary" href="add.html">Add a jersey</a>
+  <a class="button secondary" href="add.html">Add a Jersey</a>
 </div>
   <!-- Filter by Tag Section -->
 <div class="filter-panel">
@@ -52,12 +51,6 @@
     <label><input type="checkbox" name="tag" value="Real Madrid"> Real Madrid</label>
     <label><input type="checkbox" name="tag" value="Tottenham"> Tottenham</label>
   </fieldset>
-</div>
-<div class="active-filter-row">
-  <ul class="tag-list" aria-label="Selected tags">
-    <li><button class="tag tag-remove" type="button" aria-label="Remove Argentina tag">Argentina x</button></li>
-    <li><button class="tag tag-remove" type="button" aria-label="Remove Real Madrid tag">Real Madrid x</button></li>
-  </ul><button class="button secondary" type="button">Clear Filters</button>
 </div>
 <!-- Jersey List Section: it will show a grid of the jerseys currently in the database by the tags selected. If no tags selected, shows everything -->
 <p id="search-summary" role="status"></p>
