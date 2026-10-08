@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- This is the HTML for the "Details" design/page -->
+<html lang="en">
+<!-- Header -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="This page is for the detail.html that show details about a specific jersey">
+  <title>Jersey Detail | Kit Central</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="js/jquery-3.7.1.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+<!-- Navigation -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="header-center">
+      <a class="brand" href="index.html" aria-label="Kit Central, home">
+        <span class="brand-mark" aria-hidden="true">⚽</span>
+        <span class="brand-name">Kit Central</span>
+      </a>
+      <form class="search-form header-search" role="search" action="list.html" method="get">
+        <label for="header-search">Search jerseys</label>
+        <input id="header-search" name="q" type="text" placeholder="Try Luka Modric">
+        <button class="button" type="submit">Search</button>
+      </form>
+      </div>
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="index-alternate.html">Home</a>
+        <a href="list.html">Browse</a>
+        <a href="index.html">Log Out</a>
+      </nav>
+    </header>
+    <main id="main">
+  <!-- Jersey Detail -->
+<article class="detail-layout">
+  <div class="detail-media">
+    <!-- Image Source: https://soccerwearhouse.com/products/puma-ac-milan-luka-modric-home-jersey-w-champions-league-patches-25-26-red-black -->
+    <img src="images/puma-luka-modric-mens-ac-milan-home-jersey-w-champions-league-patches-2526-redblack-soccerwearhouse-2754337_5000x.webp" alt="The image shows the 2025-2026 AC Milan Jersey with Modric on the back" loading="eager">
+  </div>
+  <div class="detail-copy"><h1>AC Milan 25/26 Home Jersey - Luka Modric</h1>
+    <ul class="tag-list" aria-label="Jersey tags">
+      <li>
+        <span class="tag">AC Milan</span>
+      </li>
+        <li>
+          <span class="tag">Luka Modric</span>
+        </li>
+        <li>
+          <span class="tag">Home Jersey</span>
+        </li>
+      </ul>
+    <h2>Description</h2>
+    <p>This jersey marks the first year Luka Modric joined AC Milan. After 12 years dominating with Real Madrid, the maestro midfielder moved to Milan on a free transfer, adding another chapter to his legacy as one of the best in the world.</p>
+    <div class="favorite-controls"><label><input class="favorite-toggle" type="checkbox"> Favorite this shirt</label><span class="favorite-state">Not favorited</span></div>
+    <div class="owner-controls" role="group" aria-label="Owner actions">
+      <button class="button secondary" type="button">
+        <span aria-hidden="true">✎</span> Edit</button>
+        <button class="button secondary" type="button">Delete</button>
+      </div>
+    <div class="button-row">
+      <a class="button secondary" href="list.html">Back to collection</a>
+    </div>
+  <!-- Comments Section -->
+<section class="comments" aria-labelledby="comments-heading">
+  <h2 id="comments-heading">Comments (2)</h2>
+  <ul class="comments-list">
+    <li>
+      <strong>Lukamos410</strong>
+      <p>Buying this!</p>
+    </li>
+    <li>
+      <strong>rossoneri_forever</strong>
+      <p>My GOAT. Great design this year.</p>
+    </li>
+  </ul>
+  <form class="comment-form" action="detail.html" method="get">
+    <label for="comment-text">Write a comment</label>
+    <div class="comment-entry">
+      <input id="comment-text" name="comment" type="text" placeholder="Add a comment" required>
+      <button class="button" type="submit">Post</button>
+    </div>
+  </form>
+</section>
+  </div>
+</article>
+</main>
+  </div>
+<!-- Footer -->
+  <footer class="site-footer">
+    <nav aria-label="Footer navigation">
+      <a>About us</a>
+      <a>FAQ</a>
+      <a href="list.html">Site navigation</a>
+    </nav>
+  </footer>
+</div>
+</body>
+</html>

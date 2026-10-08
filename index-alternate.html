@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- This page is for when the user is logged in on the home page (Home Page Alternate) -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="This HTML page is for when the user is logged in on the home page (alternate)">
+  <title>Home | Kit Central</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="js/jquery-3.7.1.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+<!-- Navigation -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="header-center">
+      <a class="brand" href="index.html" aria-label="Kit Central, home">
+        <span class="brand-mark" aria-hidden="true">⚽</span>
+        <span class="brand-name">Kit Central</span>
+      </a>
+      <form class="search-form header-search" role="search" action="list.html" method="get">
+        <label for="header-search">Search jerseys</label>
+        <input id="header-search" name="q" type="text" placeholder="Try Luka Modric">
+        <button class="button" type="submit">Search</button>
+      </form>
+      </div>
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="index-alternate.html" aria-current="page">Home</a>
+        <a href="list.html">Browse</a>
+        <a href="index.html">Log Out</a></nav>
+    </header>
+    <main id="main">
+<header class="page-intro feed-heading">
+  <h1>My Feed</h1>
+  <a class="button" href="add.html">Add Jersey</a>
+</header>
+<!-- Feed Section: Will display the most recent jerseys added -->
+<div class="feed-layout">
+  <section class="feed-list" aria-label="Recent posts">
+    <article class="feed-entry">
+<!-- Image Source: https://www.classicfootballshirts.com/2022-23-barcelona-home-shirt-lewandowski-9-910-m-barh22618916.html -->
+      <img src="images/190925671161-1_d96nvyx1fphbgepv.webp" alt="The image is displaying 2022-23 Barcelona Home Shirt Lewandowski" loading="lazy">
+      <div>
+        <p class="eyebrow">mreus11 · 09/27/26</p>
+        <h2>2022-23 Barcelona Home Shirt Lewandowski</h2>
+        <a class="text-link" href="detail.html">View jersey</a>
+      </div>
+    </article>
+    <article class="feed-entry">
+<!-- Image Source: https://www.sothebys.com/en/buy/auction/2023/victoriam-part-ii/pele-1975-new-york-cosmos-triumphant-debut-match -->
+      <img src="images/screenshot-2026-09-27-152900.png" alt="The image is displaying 1975 New York Cosmos Match Worn Jersey Pele" loading="lazy">
+      <div>
+        <p class="eyebrow">diegoM10 · 09/27/26</p>
+        <h2>1975 New York Cosmos Match Worn Jersey Pele</h2>
+        <a class="text-link" href="detail.html">View jersey</a>
+      </div>
+    </article>
+    <article class="feed-entry">
+<!-- Image Source: https://www.etsy.com/listing/1887060309/luka-modri-signed-tottenham-20092010 -->
+      <img src="images/il_1588xN.7621512097_23gj.webp" alt="The image is displaying 2009-2010 Tottenham Signed Home Shirt Luka Modrić" loading="lazy">
+      <div>
+        <p class="eyebrow">sese_churu4 · 09/27/26</p>
+        <h2>2009-2010 Tottenham Signed Home Shirt Luka Modrić</h2>
+        <a class="text-link" href="detail.html">View jersey</a>
+      </div>
+    </article>
+  </section>
+<!-- Jersey of the Day Highlight/Sidebar -->
+  <aside class="day-card" aria-labelledby="day-title">
+    <h2 id="day-title">Jersey of the Day</h2>
+      <!-- Image Source: https://soccerwearhouse.com/products/puma-ac-milan-luka-modric-home-jersey-w-champions-league-patches-25-26-red-black -->
+    <img src="images/puma-luka-modric-mens-ac-milan-home-jersey-w-champions-league-patches-2526-redblack-soccerwearhouse-2754337_5000x.webp" alt="Image shows 2026-2027 AC Milan Home Luka Modric Jersey" loading="lazy">
+    <p>AC Milan Home Jersey 26/27 - Luka Modric</p>
+    <a class="text-link" href="detail.html">See jersey</a>
+  </aside>
+</div></main>
+<!-- Footer -->
+    <footer class="site-footer">
+      <nav aria-label="Footer navigation">
+        <a>About us</a>
+        <a>FAQ</a>
+        <a href="list.html">Site navigation</a>
+      </nav>
+    </footer>
+  </div>
+</body>
+</html>
